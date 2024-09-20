@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestão de Recursos</title>
+</head>
+<body>
+    <h1>Registrar Recurso</h1>
+    <form action="/registrar" method="post">
+        Nome do recurso: <input type="text" name="nome"><br>
+        Quantidade: <input type="number" name="quantidade"><br>
+        Responsável: <input type="text" name="responsavel"><br>
+        Tipo:
+        <select name="tipo">
+            <option value="Entrada">Entrada</option>
+            <option value="Saída">Saída</option>
+        </select><br>
+        <input type="submit" value="Registrar">
+    </form>
+    <br>
+    <a href="/relatorio">Gerar Relatório</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relatório de Recursos</title>
+</head>
+<body>
+    <h1>Relatório de Recursos</h1>
+    <ul>
+        {% for nome, quantidade in recursos.items() %}
+            <li>Recurso: {{ nome }}, Quantidade Disponível: {{ quantidade }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Voltar</a>
+</body>
+</html>
